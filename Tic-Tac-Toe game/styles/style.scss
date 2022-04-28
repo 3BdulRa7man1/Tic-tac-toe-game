@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+$white: #f1f1f1;
+$black: #010101;
+$button-color: #166fe5;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/pexels-leah-kelley-2090645.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    height: 100vh;
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 100vw;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 6em;
+        margin: 1.5rem 0;
+        color: $white;
+        font-family: monospace;
+        line-height: 5rem;
+        letter-spacing: 0.2rem;
+        text-transform: capitalize;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0px;
+        width: 90%;
+        height: 70vh;
+    
+        .cell {
+            display: flex;
+            width: 30%;
+            height: auto;
+            border: 2px solid $white;
+            color: $white;
+            font-family: monospace;
+            font-size: 7em;
+            align-items: center;
+            justify-content: center;
+            padding: 50% auto;
+        
+        }
+
+    }
+    .container::after,.container::before {
+        content: none;
+    }
+    
+    #alert-message {
+        position: absolute;
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        z-index: 5;
+        background-color:rgb(115, 115, 115);
+        opacity: 0.5;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 5px;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    
+        #message-place {
+            display: block;
+            width: 100vw;
+            font-family: 'Roboto',monospace;
+            font-size: 10rem;
+            color: $black;
+            margin: 20% auto 0% auto;
+            display: block;
+            height: 40vh;
+            text-transform: capitalize;
+        }
+
+        #restart {
+            font-family: 'Roboto',monospace;
+            font-size: 1.5em;
+            margin: 0 auto;
+            padding: 13px 18px;
+            border-radius: 7px;
+            color: $white;
+            background-color: $button-color;
+            border: none;   
+            z-index: 10;         
+        }
+    }
+
+    
+    @media (max-width: 425px) {
+        #alert-message{
+            height: 100vh;
+            #message-place{
+                font-size: 8em;
+            }
+        }
+    }
+    @media (max-width: 375px) {
+        #alert-message{
+            height: 100vh;
+            #message-place{
+                font-size: 6em;
+            }
+        }
+    }
+    @media (max-width: 320px) {
+        .title {
+            font-size: 5em;
+        }
+        #alert-message{
+            height: 100vh;
+            #message-place{
+                font-size: 6em;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

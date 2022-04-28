@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/pexels-leah-kelley-2090645.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  height: 100vh;
+}
+
+body .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 100vw;
+}
+
+body .title {
+  text-align: center;
+  font-size: 6em;
+  margin: 1.5rem 0;
+  color: #f1f1f1;
+  font-family: monospace;
+  line-height: 5rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  padding: 0px;
+  width: 90%;
+  height: 70vh;
+}
+
+body .container .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: auto;
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  font-family: monospace;
+  font-size: 7em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50% auto;
+}
+
+body .container::after, body .container::before {
+  content: none;
+}
+
+body #alert-message {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 5;
+  background-color: #737373;
+  opacity: 0.5;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+}
+
+body #alert-message #message-place {
+  display: block;
+  width: 100vw;
+  font-family: 'Roboto',monospace;
+  font-size: 10rem;
+  color: #010101;
+  margin: 20% auto 0% auto;
+  display: block;
+  height: 40vh;
+  text-transform: capitalize;
+}
+
+body #alert-message #restart {
+  font-family: 'Roboto',monospace;
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 13px 18px;
+  border-radius: 7px;
+  color: #f1f1f1;
+  background-color: #166fe5;
+  border: none;
+  z-index: 10;
+}
+
+@media (max-width: 425px) {
+  body #alert-message {
+    height: 100vh;
+  }
+  body #alert-message #message-place {
+    font-size: 8em;
+  }
+}
+
+@media (max-width: 375px) {
+  body #alert-message {
+    height: 100vh;
+  }
+  body #alert-message #message-place {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 320px) {
+  body .title {
+    font-size: 5em;
+  }
+  body #alert-message {
+    height: 100vh;
+  }
+  body #alert-message #message-place {
+    font-size: 6em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
